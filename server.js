@@ -3,7 +3,8 @@ const path =require("path");
 const app = express();
 
 
-app.use('/static',express.static(path.resolve(__dirname,"frontEnd","static")))
+app.use(express.static(path.resolve(__dirname,"frontEnd")))
+
 
 app.get("/*",(req,res)=>
 {

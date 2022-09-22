@@ -1,14 +1,7 @@
-import abstractViews from "./abstractViews.js";
-
-
-export default class extends abstractViews{
- constructor(){
-   super();
-    this.setTitle("postd");
- }   
- async getHtml(){
-    return `
-   <h1> you are post page</h1>
-    `;
- }
+const post={
+   getHtml :function(){
+    return(  `<p>a ddicated sdfghjkby a new line, indentation, or numbering:</p>`)
+   }
 }
+
+export default post;
